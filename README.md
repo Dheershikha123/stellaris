@@ -6,9 +6,9 @@ Trustless peer-to-peer betting on the Stellar blockchain. Lock XLM into a Soroba
 
 | | |
 |---|---|
-| **Frontend** | `https://chainbet.vercel.app` |
+| **Frontend** | `https://chainbet.bice.app` |
 | **GitHub** | `https://github.com/YOUR_USERNAME/chainbet` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CAVC3AOBBPLXE2LUXZBWAB3R3DYITFNB2LG7WHGX3HOCGQL3UETSHWWC` |
 | **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
 
 ## How It Works
