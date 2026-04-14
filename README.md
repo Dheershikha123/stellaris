@@ -6,8 +6,8 @@ Trustless peer-to-peer betting on the Stellar blockchain. Lock XLM into a Soroba
 
 | | |
 |---|---|
-| **Frontend** | `https://chainbet-bice.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CAVC3AOBBPLXE2LUXZBWAB3R3DYITFNB2LG7WHGX3HOCGQL3UETSHWWC` |
+| **Frontend** | `https://chainbet-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CAZ5TNL5W24OODBFG3V4KVFPTGMHMFWHTAGLNZBBU27CUEEYJNN7BYNY` |
 
 ## How It Works
 
@@ -16,6 +16,16 @@ Trustless peer-to-peer betting on the Stellar blockchain. Lock XLM into a Soroba
 3. **Oracle** calls `resolve_bet` and names the winner — funds transfer instantly
 4. Creator can **cancel** any open bet before it's accepted for a full refund
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -43,3 +53,6 @@ cd frontend && npm install && npm run dev
 | Frontend | React 18 + Vite |
 | Wallet | Freighter v1.7.1 |
 | Hosting | Vercel |
+
+
+
